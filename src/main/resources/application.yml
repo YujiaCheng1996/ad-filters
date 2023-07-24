@@ -1,6 +1,6 @@
 spring:
   application:
-    name: adg-rule
+    name: cyj-rules
   profiles:
     active: prod  #切换至 dev 即可输出调试信息
 
@@ -20,9 +20,46 @@ application:
 
     # 仅支持 http/https，不限定响应内容格式
     remote:
-#      - name: 'example rule' #规则名称
-#        path: 'https://example.org/rule.txt' #规则地址
-#      - 'https://example.org/rule2.txt' #旧版写法, 不推荐
+      # 只订阅非adguard官方已包含的第三方规则
+      - name: AWAvenue-Adblock-Rule
+        path: https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Adblock-Rule/main/AWAvenue-Adblock-Rule.txt
+      - name: halflife-list
+        path: https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad.txt
+      - name: ADgk-baidu
+        path: https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt
+      - name: DD-AD
+        path: https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/DD-AD.txt
+      # 以下是host规则，尽量全部订阅以去重
+      # - name: AdAway Default Blocklist
+      #   path: https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt
+       # 此规则已包含上面1条
+      - name: StevenBlack
+        path: https://raw.githubusercontent.com/dead-hosts/hosts_git_StevenBlack/master/output/origin.list/domains/ACTIVE/list
+        # path: https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+      # - name: yhosts
+      #   path: https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts.txt
+      # - name: 1024_hosts
+      #   path: https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts
+      # - name: QuarkList
+      #   path: https://raw.githubusercontent.com/francis-zhao/quarklist/master/dist/hosts
+      # - name: ilpl
+      #   path: https://raw.githubusercontent.com/ilpl/ad-hosts/master/hosts
+      # 此规则已包含上面4条
+      - name: 小贝塔
+        path: https://raw.githubusercontent.com/rentianyu/Ad-set-hosts/master/host
+      # - name: WindowsSpyBlocker
+      #   path: https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt
+      # 此规则已包含上面1条
+      # - name: anti-AD
+      #   path: https://raw.githubusercontent.com/neodevpro/neodevhost/master/adblocker
+      # - name: 大圣净化
+      #   path: https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
+      # 此规则已包含上面2条
+      - name: neodevpro
+        path: https://raw.githubusercontent.com/neodevpro/neodevhost/master/domain
+      - name: AdRules
+        path: https://raw.githubusercontent.com/Cats-Team/AdRules/main/ad-domains.txt
+
 
     #本地规则请将文件放置到项目路径rule目录中
     local:
@@ -30,10 +67,10 @@ application:
 #        path: 'local-rule.txt'
   output:
     file_header: |  #输出文件头, 占位符${name}将被替换为文件名，如all.txt,  ${date} 将被替换为当前日期
-      [ADFS Adblock List]
-      ! Title: ${name}
+      [CYJ Adblock List]
+      ! Title: CYJ Adblock List ${name}
       ! Last Modified: ${date}
-      ! Homepage: https://github.com/fordes123/ad-filters-subscriber/
+      ! Homepage: https://github.com/YujiaCheng1996/ad-filters/
     path: rule   #规则文件输出路径，相对路径默认从 项目目录开始
     files:
       all.txt: #输出文件名

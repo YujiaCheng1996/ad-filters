@@ -1,7 +1,7 @@
 <div align="center">
-<h1>AD Filter Subscriber</h1>
+<h1>AD Filter</h1>
   <p>
-    广告过滤规则订阅器，整合不同来源的规则，帮助你快速构建属于自己的规则集~
+    自用去广告规则
   </p>
 <!-- Badges -->
 <p>
