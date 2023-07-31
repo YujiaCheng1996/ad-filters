@@ -34,8 +34,8 @@ application:
       #   path: https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt
        # 此规则已包含上面1条
       - name: StevenBlack
-        path: https://raw.githubusercontent.com/dead-hosts/hosts_git_StevenBlack/master/output/origin.list/domains/ACTIVE/list
-        # path: https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+        path: https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+        # path: https://raw.githubusercontent.com/dead-hosts/hosts_git_StevenBlack/master/output/origin.list/domains/ACTIVE/list
       # - name: yhosts
       #   path: https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts.txt
       # - name: 1024_hosts
@@ -78,7 +78,13 @@ application:
         - REGEX   #正则规则，包含正则的域名规则，AdGH支持
         - MODIFY  #修饰规则，添加了一些修饰符号的规则，AdG支持
         - HOSTS   #Hosts规则
+      filters.txt:
+        - REGEX
+        - MODIFY
       dns.txt:
+        - DOMAIN
+        - REGEX
+      agh.txt:
         - DOMAIN
         - REGEX
         - HOSTS
