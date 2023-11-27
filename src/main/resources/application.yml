@@ -39,9 +39,9 @@ application:
       # - name: AdAway Default Blocklist
       #   path: https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt
        # 此规则已包含上面1条
-      - name: StevenBlack
-        path: https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
-        # path: https://raw.githubusercontent.com/dead-hosts/hosts_git_StevenBlack/master/output/origin.list/domains/ACTIVE/list
+      # - name: StevenBlack
+      #   path: https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+      #   # path: https://raw.githubusercontent.com/dead-hosts/hosts_git_StevenBlack/master/output/origin.list/domains/ACTIVE/list
       # - name: yhosts
       #   path: https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts.txt
       # - name: 1024_hosts
@@ -50,7 +50,7 @@ application:
       #   path: https://raw.githubusercontent.com/francis-zhao/quarklist/master/dist/hosts
       # - name: ilpl
       #   path: https://raw.githubusercontent.com/ilpl/ad-hosts/master/hosts
-      # 此规则已包含上面4条
+      # 此规则已包含上面5条
       - name: 小贝塔
         path: https://raw.githubusercontent.com/rentianyu/Ad-set-hosts/master/host
       # - name: WindowsSpyBlocker
@@ -91,7 +91,7 @@ application:
         - MODIFY
       dns.txt:
         - DOMAIN
-        - REGEX
+        - HOSTS
       agh.txt:
         - DOMAIN
         - REGEX
