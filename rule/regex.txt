@@ -1,6 +1,6 @@
 [CYJ Adblock List]
 ! Title: CYJ Adblock List regex.txt
-! Last Modified: 2024-02-05 00:12:59
+! Last Modified: 2024-02-05 08:54:14
 ! Homepage: https://github.com/YujiaCheng1996/ad-filters/
 ! 👇This Part Merge from: DD-AD (https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/DD-AD.txt)
 ||ads*-normal-hl.amemv.com^
@@ -25,6 +25,21 @@
 ||ads*-normal-lq.amemv.com^
 ||ads*-normal-lq.zijieapi.com.queniuiq.com^
 ||ads*-normal-lq.zijieapi.com.w.cdngslb.com^
+! 👇This Part Merge from: GOODBYEADS (https://raw.githubusercontent.com/8680/GOODBYEADS/master/data/rules/adblock.txt)
+||sf*-fe-tos.pglstatp-toutiao.com^
+||dl_dir2.qq.com^
+||log-api.pangolin-sdk-toutiao-*.com^
+||v*-be-pack.pglstatp-toutiao.com^
+||s*a.pstatp.com^
+||dl_dir.qq.com^
+||tnc3-bjlgy.snssdk.^
+||sf*-be-pack.pglstatp-toutiao.com^
+||ads*-normal*.zijieapi.com^
+||api-access.pangolin-sdk-toutiao-*.com^
+||s*-fe-scm.pglstatp-toutiao.com^
+||access*.tpns.tencent.com^
+||upload_data.qq.com^
+||access.pangolin-sdk-toutiao-*.com^
 ! 👇This Part Merge from: halflife-list (https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad.txt)
 ||zhizhizhizhi.oss-*.aliyuncs.com^
 ||adi*.cnool.net^
@@ -72,29 +87,10 @@
 ! 👇This Part Merge from: 217heidai-filters (https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt)
 @@||adobeid-*.services.adobe.com^
 10.10.34.*
-! 👇This Part Merge from: GOODBYEADS (https://raw.githubusercontent.com/8680/GOODBYEADS/master/data/rules/adblock.txt)
-||sf*-fe-tos.pglstatp-toutiao.com^
-||dl_dir2.qq.com^
-||log-api.pangolin-sdk-toutiao-*.com^
-||v*-be-pack.pglstatp-toutiao.com^
-||s*a.pstatp.com^
-||dl_dir.qq.com^
-||tnc3-bjlgy.snssdk.^
-||sf*-be-pack.pglstatp-toutiao.com^
-||ads*-normal*.zijieapi.com^
-||api-access.pangolin-sdk-toutiao-*.com^
-||s*-fe-scm.pglstatp-toutiao.com^
-||access*.tpns.tencent.com^
-||upload_data.qq.com^
-||access.pangolin-sdk-toutiao-*.com^
-! 👇This Part Merge from: 小贝塔 (https://raw.githubusercontent.com/rentianyu/Ad-set-hosts/master/adguard)
-||09_19.supfree.net^
 ! 👇This Part Merge from: 217heidai-filters (https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt)
 MRelateFeedAd
 @@||cdn*.porn300.com^
 Banner468x60
-! 👇This Part Merge from: 217heidai-dns (https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt)
-||fb_servpub-a.akamaihd.net^
 ! 👇This Part Merge from: 217heidai-filters (https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt)
 analytics-*.aasaam.com
 advertisers.js|
@@ -104,8 +100,6 @@ getAds|
 rgmechanicsgames.com*VPN.exe
 piao.js|
 oHead6205.appendChild( oScript6205);
-! 👇This Part Merge from: 小贝塔 (https://raw.githubusercontent.com/rentianyu/Ad-set-hosts/master/adguard)
-||mishop.pandora.xiaomi.com.^
 ! 👇This Part Merge from: 217heidai-filters (https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt)
 ||adx.
 ||adx-
@@ -226,10 +220,9 @@ oHead6205.appendChild( oScript6205);
 ||ap*.pl520.com^
 ||analytics.*.sky.com^
 ! 👇This Part Merge from: 小贝塔 (https://raw.githubusercontent.com/rentianyu/Ad-set-hosts/master/adguard)
-||philadelphia_cbslocal.us.intellitxt.com^
-||prebid_stats.mars.media^
-! 👇This Part Merge from: 217heidai-dns (https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt)
-||zgarniij_vouchher.skroc.pl^
+||09_19.supfree.net^
+! 👇This Part Merge from: AdRules (https://raw.githubusercontent.com/Cats-Team/AdRules/main/adblock_plus.txt)
+@@||cdn-msp*.18comic.*^
 ! 👇This Part Merge from: 217heidai-filters (https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt)
 ||liveweb*.msstatic.com^
 ||host*.nti.nl^
@@ -388,6 +381,10 @@ oHead6205.appendChild( oScript6205);
 ||flurry.agentportal-*.yahoodns.net^
 ||fxhpaoxqyajvmdg.
 ||host*.rigbyandpeller.com^
+! 👇This Part Merge from: 217heidai-dns (https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt)
+||fb_servpub-a.akamaihd.net^
+! 👇This Part Merge from: AdRules (https://raw.githubusercontent.com/Cats-Team/AdRules/main/adblock_plus.txt)
+directtrack.*.js
 ! 👇This Part Merge from: 217heidai-filters (https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt)
 ||pixel*.production-public.tubi.io^
 ||pangolin-sdk-toutiao*.com^
@@ -557,14 +554,17 @@ oHead6205.appendChild( oScript6205);
 ||xmindchina.
 ||zahrvfbd*.xyz^
 ||zbc6hy*.live^
-! 👇This Part Merge from: 小贝塔 (https://raw.githubusercontent.com/rentianyu/Ad-set-hosts/master/adguard)
-||www.zgarniij_vouchher.skroc.pl^
-! 👇This Part Merge from: AdRules (https://raw.githubusercontent.com/Cats-Team/AdRules/main/adblock_plus.txt)
-@@||cdn-msp*.18comic.*^
-! 👇This Part Merge from: AdRules (https://raw.githubusercontent.com/Cats-Team/AdRules/main/adblock_plus.txt)
-directtrack.*.js
 ! 👇This Part Merge from: AdRules (https://raw.githubusercontent.com/Cats-Team/AdRules/main/adblock_plus.txt)
 esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
+! 👇This Part Merge from: 217heidai-dns (https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt)
+||zgarniij_vouchher.skroc.pl^
+! 👇This Part Merge from: 小贝塔 (https://raw.githubusercontent.com/rentianyu/Ad-set-hosts/master/adguard)
+||mishop.pandora.xiaomi.com.^
+! 👇This Part Merge from: 小贝塔 (https://raw.githubusercontent.com/rentianyu/Ad-set-hosts/master/adguard)
+||philadelphia_cbslocal.us.intellitxt.com^
+||prebid_stats.mars.media^
+! 👇This Part Merge from: 小贝塔 (https://raw.githubusercontent.com/rentianyu/Ad-set-hosts/master/adguard)
+||www.zgarniij_vouchher.skroc.pl^
 ! 👇This Part Merge from: AdRules (https://raw.githubusercontent.com/Cats-Team/AdRules/main/adblock_plus.txt)
 outlook.live.com._6tqjFb_HmyQup_NPe6dhC
 ! 👇This Part Merge from: AdRules (https://raw.githubusercontent.com/Cats-Team/AdRules/main/adblock_plus.txt)
