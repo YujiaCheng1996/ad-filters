@@ -1,4 +1,4 @@
 [CYJ Adblock List]
 ! Title: CYJ Adblock List hosts.txt
-! Last Modified: 2024-02-11 08:56:04
+! Last Modified: 2024-02-11 16:13:59
 ! Homepage: https://github.com/YujiaCheng1996/ad-filters/
